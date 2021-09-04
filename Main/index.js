@@ -350,7 +350,8 @@ function appMenu() {
         },
       ])
       .then((answers) => {
-        const intern = new Intern( //name, years, gender, age, project, id, email, school
+        //name, years, gender, age, project, id, email, school
+        const intern = new Intern(
           answers.internName,
           answers.internGender,
           answers.internAge,
@@ -359,12 +360,31 @@ function appMenu() {
           answers.internEmail,
           answers.internSchool
         );
-        console.log(answers)
+        console.log(answers);
+        console.log("*****Intern*****");
+        console.log(intern);
         teamMembers.push(intern);
         idArray.push(answers.internId);
         createTeam();
       });
   }
+  /*
+.then((answers) => {
+        const engineer = new Engineer(
+          answers.engineerName,
+          answers.engineerYears,
+          answers.engineerGender,
+          answers.engineerAge,
+          answers.engineerProject,
+          answers.engineerId,
+          answers.engineerEmail,
+          answers.engineerGithub
+        );
+        teamMembers.push(engineer);
+        idArray.push(answers.engineerId);
+        createTeam();
+      });
+  */
 
   function buildTeam() {
     // Create the output directory if the output path doesn't exist
