@@ -350,7 +350,7 @@ function appMenu() {
         },
       ])
       .then((answers) => {
-        //name, years, gender, age, project, id, email, school
+        //name, years, gender, age, project, id, email, school//add years or remove it
         const intern = new Intern(
           answers.internName,
           answers.internGender,
