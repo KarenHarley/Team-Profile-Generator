@@ -3,7 +3,7 @@ const generateTeam = (team) => {
   // create the manager html
   const generateManager = (manager) => {
     return `
-    <div class="card employee-card">//do i need moreInfo
+    <div class="card employee-card">
     <div class="card-header">
       <h2 class="card-title">${manager.getName()}</h2>
       <h3 class="card-title">
@@ -80,7 +80,7 @@ const generateTeam = (team) => {
             <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a>
           </li>
           <li class="list-group-details">
-            GitHub: ${engineer.getGithub()}
+            GitHub: <a href="https://github.com/${engineer.getGithub()}" target="_blank" rel="noopener noreferrer">${engineer.getGithub()}</a>
           </li>
           <li class="list-group-details">
             Years In company: ${engineer.getYears()}

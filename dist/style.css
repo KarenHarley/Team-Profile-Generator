@@ -1,36 +1,110 @@
 .team-heading {
-    background-color: #E84855;
-    color: #ffffff;
+  background-color: #e84855;
+  color: #ffffff;
 }
 
 .team-area {
-    max-width: 1000px;
-    margin: 3em auto;
-    flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 3em auto;
+  flex-wrap: wrap;
 }
 
 .employee-card {
-    margin: 1em;
-    max-width: 280px;
-    width: 90%;
-    min-height: 22rem;
-    background-color: #007bff;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 4px 4px 8px rgba(0,0,0,0.7);
-    border: none;
+  margin: 1em;
+  max-width: 280px;
+  width: 90%;
+  min-height: 22rem;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  border: none;
 }
 
 .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #F6F7F8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f6f7f8;
 }
 
 .list-group-item {
-    color: #000000;
-    text-decoration: none;
+  color: #000000;
+  text-decoration: none;
 }
+/* for hover*/
+/*
+.moreInfo {
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+}
+*/
+.list-group-details {
+  position: relative;
+  display: block;
+  padding: -0.25rem 1.25rem;
+  padding-left: 20px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+/*
+.details {
+height: 200px;
+  width: 300px;
+}
+*/
+/*
+.moreInfo h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+*/
+.details {
+  /* fix the first 2*/
+  left: -16px;
+  top: -15px;
+  
+  position: absolute;
+
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+
+  margin: 1em;
+  max-width: 280px;
+  width: 100%;
+  min-height: 22rem;
+}
+.list-items-details {
+  color: black;
+}
+
+.details:hover {
+  opacity: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #007bff;
+}
+/*
+.details a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(40, 40, 40);
+  padding: 5px;
+  border-radius: 5px;
+  border: white solid 2px;
+
+  padding: 10px;
+
+}
+*/

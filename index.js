@@ -5,7 +5,7 @@ const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
 
-const OUTPUT_DIR = path.resolve(__dirname, "output");
+const OUTPUT_DIR = path.resolve(__dirname, "dist");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./src/page-template.js");
@@ -288,6 +288,18 @@ function appMenu() {
         },
         {
           type: "input",
+          name: "internYears",
+          message: "How many years has your intern worked in this company?",
+          validate: (answer) => {
+            const pass = answer.match(/^[0-9]\d*$/);
+            if (pass) {
+              return true;
+            }
+            return "Please enter a positive number greater than zero.";
+          },
+        },
+        {
+          type: "input",
           name: "internAge",
           message: "What is your intern's Age?",
           validate: (answer) => {
@@ -353,6 +365,7 @@ function appMenu() {
         //name, years, gender, age, project, id, email, school//add years or remove it
         const intern = new Intern(
           answers.internName,
+          answers.internYears,//added years
           answers.internGender,
           answers.internAge,
           answers.internProject,
@@ -360,31 +373,12 @@ function appMenu() {
           answers.internEmail,
           answers.internSchool
         );
-        console.log(answers);
-        console.log("*****Intern*****");
-        console.log(intern);
         teamMembers.push(intern);
         idArray.push(answers.internId);
         createTeam();
       });
   }
-  /*
-.then((answers) => {
-        const engineer = new Engineer(
-          answers.engineerName,
-          answers.engineerYears,
-          answers.engineerGender,
-          answers.engineerAge,
-          answers.engineerProject,
-          answers.engineerId,
-          answers.engineerEmail,
-          answers.engineerGithub
-        );
-        teamMembers.push(engineer);
-        idArray.push(answers.engineerId);
-        createTeam();
-      });
-  */
+
 
   function buildTeam() {
     // Create the output directory if the output path doesn't exist
