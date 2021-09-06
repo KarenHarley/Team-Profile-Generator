@@ -9,7 +9,7 @@ The instuctional staff posted the solution as a mistake but instucted me to add 
 
    ## Table of Contents 
 
- - [How to use](#How-to-use)
+  - [How to use](#How-to-use)
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
@@ -39,15 +39,18 @@ The instuctional staff posted the solution as a mistake but instucted me to add 
 
  Then, after responding to all of the questions and an html page like the one below will be created.
 
- See the html file here:
+
+   ![Final product](./pics/website.png)
+ 
+ <br/>
+<br/>
+   See the html file here:
 
  https://github.com/KarenHarley/Team-Profile-Generator/blob/main/dist/team.html
 
 
-<br/>
-<br/>
 
-   ![Final product](./pics/website.png)
+
 
 ## Additional Functionality
 
