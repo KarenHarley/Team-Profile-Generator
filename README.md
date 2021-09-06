@@ -9,12 +9,10 @@ The instuctional staff posted the solution as a mistake but instucted me to add 
 
    ## Table of Contents 
 
-  - [How to use](#How-to-use)
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
   - [How to Contribute](#contribute)
-  - [Tests](#tests)
   - [Questions](#questions)
 
 <br/>
