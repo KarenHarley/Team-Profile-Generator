@@ -1,7 +1,7 @@
 [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/DAVFoundation/captain-n3m0/blob/master/LICENSE)
 
 # Team-Profile-Generator
-This is Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. 
+This is Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person!
 
 ***Note***
 
