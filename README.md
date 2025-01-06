@@ -67,8 +67,8 @@ The user will be prompted with additional questions that will be displayed when 
   ## Questions
   To reach me please contact me in the email address below
 
-  - GitHub: https://github.com/KarenHarley
-  - Email: karenharley88@gmail.com
+  - GitHub: `https://github.com/KarenHarley`
+  - Email: `karenharley88@gmail.com`
     
     
   
